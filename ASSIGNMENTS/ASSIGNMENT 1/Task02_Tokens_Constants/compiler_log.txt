@@ -1,0 +1,3 @@
+=== g++ -std=c++17 -Wall -Wextra t2_tokens_and_constants.cpp ===
+exit=0
+(no warnings/errors)

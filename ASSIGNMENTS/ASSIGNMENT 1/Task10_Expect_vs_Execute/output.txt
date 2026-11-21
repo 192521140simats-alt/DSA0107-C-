@@ -1,0 +1,6 @@
+--- t10_scale_comparison ---
+INT_MAX = 2147483647 (~2.147e9)
+Scale N=   20000 | PaiseSum=     48000000 | ExactRs=   480000.00 | DblSumRs=   480000.00 | DiffRs=0.000000
+Scale N=  500000 | PaiseSum=   1200000000 | ExactRs= 12000000.00 | DblSumRs= 12000000.00 | DiffRs=0.000000
+Scale N= 3000000 | PaiseSum=   7200000000 | ExactRs= 72000000.00 | DblSumRs= 72000000.00 | DiffRs=0.000000
+3,000,000 * 2400 paise in long long: 7200000000 | in 32-bit int: -1389934592

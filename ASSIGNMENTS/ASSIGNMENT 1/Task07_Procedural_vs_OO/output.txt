@@ -1,0 +1,4 @@
+--- t7_procedural_vs_oo ---
+Procedural deduct 3600: 1 | bal=5400
+OOP deduct 3600: 1 | bal=5400
+OOP deduct 1000: 0 | bal=5400

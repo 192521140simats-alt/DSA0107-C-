@@ -1,0 +1,12 @@
+--- t9_test_suite ---
+Hand-calculated 5-journey total: 8500 paise (Rs 85.00)
+
+Inner Off-Peak (11h)     | Fare=1000 (exp 1000) | Allow=1 (exp 1) | PASS
+Boundary 08:00 Peak      | Fare=2400 (exp 2400) | Allow=1 (exp 1) | PASS
+Boundary 10:00 OffPk     | Fare=2000 (exp 2000) | Allow=1 (exp 1) | PASS
+Boundary 17:00 Peak      | Fare=3600 (exp 3600) | Allow=1 (exp 1) | PASS
+Boundary 20:00 OffPk     | Fare=3000 (exp 3000) | Allow=1 (exp 1) | PASS
+Exact Rs 50 Left         | Fare=2000 (exp 2000) | Allow=1 (exp 1) | PASS
+Neg Recharge Rejected    | Fare=1000 (exp 1000) | Allow=1 (exp 1) | PASS
+
+Passed 7 / 7 test cases.

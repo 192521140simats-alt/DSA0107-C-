@@ -1,0 +1,3 @@
+=== g++ -std=c++17 -Wall -Wextra t12_redesigned_fare.cpp ===
+exit=0
+(no warnings/errors)

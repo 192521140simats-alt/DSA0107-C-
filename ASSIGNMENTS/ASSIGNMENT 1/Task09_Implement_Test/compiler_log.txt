@@ -1,0 +1,3 @@
+=== g++ -std=c++17 -Wall -Wextra t9_test_suite.cpp ===
+exit=0
+(no warnings/errors)

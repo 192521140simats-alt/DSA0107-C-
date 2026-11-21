@@ -1,0 +1,3 @@
+=== g++ -std=c++17 -Wall -Wextra t8_safe_io.cpp ===
+exit=0
+(no warnings/errors)

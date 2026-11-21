@@ -1,0 +1,5 @@
+--- t12_redesigned_fare ---
+1) Airport weekday peak (09h, no pass): Rs 72.00
+2) Airport weekend peak-hour window (09h, weekend, no pass): Rs 54.00
+3) Middle covered by pass (09h, weekday): Rs 0.00
+4) Airport NOT covered by pass (14h, weekday): Rs 60.00

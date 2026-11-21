@@ -1,0 +1,2 @@
+--- t11_recommended_design ---
+Recommended GatePolicy constexpr Outer@09:00 = 3600 paise (Rs 36.00)

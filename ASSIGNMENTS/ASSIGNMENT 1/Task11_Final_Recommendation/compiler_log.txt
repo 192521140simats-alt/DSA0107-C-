@@ -1,0 +1,3 @@
+=== g++ -std=c++17 -Wall -Wextra t11_recommended_design.cpp ===
+exit=0
+(no warnings/errors)
