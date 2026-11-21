@@ -1,1 +1,0 @@
-# Q1 uses internal test fixtures demonstrating default, 1-arg explicit, full parameterized constructors, array initialization, and negative copy validation.

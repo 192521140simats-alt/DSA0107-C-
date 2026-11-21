@@ -1,1 +1,0 @@
-# Q2 tests deep vs shallow copy on prescriptions and scales N={10, 1000, 100000}.
