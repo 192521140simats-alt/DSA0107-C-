@@ -1,3 +1,0 @@
-Marks array: {78, 92, 85, 88, 92}
-Moderation: +2, then set to 99
-Vector growth test: push_back 20 items into {70, 80, 90}
