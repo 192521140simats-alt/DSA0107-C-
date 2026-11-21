@@ -1,0 +1,46 @@
+$ g++ -std=c++17 -Wall -Wextra book_records.cpp -o book_records && ./book_records
+=== Q1: Library Book Records (Constructors & Delegation) ===
+
+[Default Constructor] Title: "Untitled Record" | Author: Pending | ISBN: N/A | Copies: 0
+[Donated Book (1-arg)] Title: "The C++ Programming Language" | Author: Unknown Donor | ISBN: UNASSIGNED | Copies: 1
+[Full Parameterized] Title: "Clean Code" | Author: Robert C. Martin | ISBN: 978-0132350884 | Copies: 5
+
+--- Array of Books ---
+[Shelf[0]] Title: "Design Patterns" | Author: GoF | ISBN: 978-0201633610 | Copies: 3
+[Shelf[1]] Title: "Effective Modern C++" | Author: Scott Meyers | ISBN: 978-1491903995 | Copies: 4
+
+--- Explicit Constructor Test ---
+[Cataloged] Title: "Refactoring" | Author: Unknown Donor | ISBN: UNASSIGNED | Copies: 1
+Explicit call catalogBook(Book("Refactoring")) succeeded; implicit conversion blocked.
+
+--- Negative Copies Validation Test ---
+Caught Exception: Invalid number of copies: cannot be negative (-3)
+
+$ g++ -std=c++17 -Wall -Wextra exp_no_default.cpp -o exp_no_default
+repo/Q1/exp_no_default.cpp: In function ‘int main()’:
+repo/Q1/exp_no_default.cpp:9:26: error: no matching function for call to ‘BookNoDefault::BookNoDefault()’
+    9 |     BookNoDefault shelf[3];
+      |                          ^
+repo/Q1/exp_no_default.cpp:6:5: note: candidate: ‘BookNoDefault::BookNoDefault(const std::string&, int)’
+    6 |     BookNoDefault(const std::string& t, int c) : title(t), copies(c) {}
+      |     ^~~~~~~~~~~~~
+repo/Q1/exp_no_default.cpp:6:5: note:   candidate expects 2 arguments, 0 provided
+repo/Q1/exp_no_default.cpp:2:7: note: candidate: ‘BookNoDefault::BookNoDefault(const BookNoDefault&)’
+    2 | class BookNoDefault {
+      |       ^~~~~~~~~~~~~
+repo/Q1/exp_no_default.cpp:2:7: note:   candidate expects 1 argument, 0 provided
+repo/Q1/exp_no_default.cpp:2:7: note: candidate: ‘BookNoDefault::BookNoDefault(BookNoDefault&&)’
+repo/Q1/exp_no_default.cpp:2:7: note:   candidate expects 1 argument, 0 provided
+
+$ g++ -std=c++17 -Wall -Wextra exp_reorder.cpp -o exp_reorder && ./exp_reorder
+repo/Q1/exp_reorder.cpp: In constructor ‘ReorderDemo::ReorderDemo(int)’:
+repo/Q1/exp_reorder.cpp:4:9: warning: ‘ReorderDemo::secondDeclared’ will be initialized after [-Wreorder]
+    4 |     int secondDeclared;
+      |         ^~~~~~~~~~~~~~
+repo/Q1/exp_reorder.cpp:3:9: warning:   ‘int ReorderDemo::firstDeclared’ [-Wreorder]
+    3 |     int firstDeclared;
+      |         ^~~~~~~~~~~~~
+repo/Q1/exp_reorder.cpp:6:5: warning:   when initialized here [-Wreorder]
+    6 |     ReorderDemo(int val) : secondDeclared(firstDeclared + 10), firstDeclared(val) {}
+      |     ^~~~~~~~~~~
+firstDeclared=5, secondDeclared=15

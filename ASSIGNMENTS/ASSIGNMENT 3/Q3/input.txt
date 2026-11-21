@@ -1,0 +1,1 @@
+# Q3 tests stack, block-scope, heap, and 0-row auditorium events, plus memory scaling.
