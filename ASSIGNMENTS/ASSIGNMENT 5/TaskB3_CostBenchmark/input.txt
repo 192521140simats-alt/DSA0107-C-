@@ -1,0 +1,1 @@
+Automated benchmark over N={1000, 1000000, 10000000} bills and 1,000,000 validation checks at 0%, 1%, 50% fault rates.

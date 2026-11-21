@@ -1,0 +1,9 @@
+=== B4.1 & B4.2 EXTENSION + FAULT-RESILIENT BATCH RUN ===
+[Rejected Record B204] Negative Telemedicine fee (Batch preserved)
+[B201] OutPatient   | Payer: Insurance              | Total: Rs.1700.00  | Covered: Rs.1530.00 
+[B201] OutPatient   | Payer: CorpTieUp(InfosysHealth) | Total: Rs.1700.00  | Covered: Rs.1445.00 
+[B202] InPatient    | Payer: Insurance              | CLAIM REJECTED: Eligible claim exceeds policy limit
+[B202] InPatient    | Payer: CorpTieUp(InfosysHealth) | Total: Rs.47500.00 | Covered: Rs.40375.00
+[B203] Telemedicine | Payer: Insurance              | Total: Rs.950.00   | Covered: Rs.855.00  
+[B203] Telemedicine | Payer: CorpTieUp(InfosysHealth) | Total: Rs.950.00   | Covered: Rs.807.50  
+=== Batch complete: 3 valid bills settled, 0 memory leaks ===

@@ -1,0 +1,1 @@
+Hardcoded test cases matching B1 specification (Ravi OP=1700, Meena IP=47500, Arjun DayCare=22000, Priya Emergency=9000).

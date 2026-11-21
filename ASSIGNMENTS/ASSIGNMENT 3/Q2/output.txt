@@ -1,0 +1,33 @@
+$ g++ -std=c++17 -Wall -Wextra -fsanitize=address -g prescription_complete.cpp -o prescription_complete && ./prescription_complete
+Ibuprofen ORS | Paracetamol Cetirizine | Paracetamol ORS
+(ASan: 0 errors, 0 leaks)
+
+$ g++ -std=c++17 -Wall -Wextra -fsanitize=address -g prescription_shallow.cpp -o prescription_shallow && ./prescription_shallow
+=================================================================
+==59==ERROR: AddressSanitizer: heap-use-after-free on address 0x607000000100 at pc 0x55bd9fda6ccb bp 0x7f80dc81b940 sp 0x7f80dc81b938
+READ of size 8 at 0x607000000100 thread T0
+    #0 0x55bd9fda6cca in ShallowPrescription::~ShallowPrescription() repo/Q2/prescription_shallow.cpp:8
+    #1 0x55bd9fda685b in main repo/Q2/prescription_shallow.cpp:19
+    #2 0x7f6326094249  (/lib/x86_64-linux-gnu/libc.so.6+0x27249)
+    #3 0x7f6326094304 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x27304)
+    #4 0x55bd9fda6320 in _start (/tmp/q2_s+0x2320)
+
+0x607000000100 is located 0 bytes inside of 72-byte region [0x607000000100,0x607000000148)
+freed by thread T0 here:
+    #0 0x7f63266234f8 in operator delete[](void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:167
+    #1 0x55bd9fda6d88 in ShallowPrescription::~ShallowPrescription() repo/Q2/prescription_shallow.cpp:8
+    #2 0x55bd9fda684c in main repo/Q2/prescription_shallow.cpp:19
+
+$ g++ -std=c++17 -Wall -Wextra -O2 prescription_experiments.cpp -o prescription_experiments && ./prescription_experiments
+=== Q2 Experimental Investigation ===
+
+Copies made when passed by VALUE: 1
+Copies made when passed by CONST REFERENCE: 0
+[Self-Assignment Guard] Detected p = p; skipped reallocation safely.
+After self-assignment, p[0] = Med_0
+
+--- Copy Performance Benchmark (Raw Dynamic Array vs std::vector) ---
+Medicines (n)  Raw Deep Copy (us)       std::vector Copy (us)    
+10             0.80                     0.30                     
+1000           107.25                   130.99                   
+100000         4940.46                  4376.74                  

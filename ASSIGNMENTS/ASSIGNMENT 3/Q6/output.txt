@@ -1,0 +1,14 @@
+$ g++ -std=c++17 -Wall -Wextra -fsanitize=address -g -O1 sms_text.cpp -o sms_text && ./sms_text
+=== Q6: SMS Gateway Text Class ===
+
+Empty message length: 0 | empty == Text(""): true
+Long SMS message length: 500
+After self-assignment (a = a): "Hello, "
+Combined SMS: Hello, Tharika! SMS Gateway Ready.
+Copy constructor invocations in (a + b + c): 0 (C++17 guaranteed copy elision)
+Comparison (a != b): true
+
+--- 20,000 Concatenations Benchmark (scaled O(N^2) test) ---
+Custom Text class : 1549.08 ms (final len=20000)
+std::string       : 900.252 ms (final len=20000)
+(ASan: 0 errors, 0 leaks)

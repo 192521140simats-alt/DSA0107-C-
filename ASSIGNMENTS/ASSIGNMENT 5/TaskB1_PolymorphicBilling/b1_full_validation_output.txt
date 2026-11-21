@@ -1,0 +1,18 @@
+=== B1.1 POLYMORPHIC BILLING & PAYER SETTLEMENT MATRIX ===
+[B101] OutPatient     | Patient: Ravi       | Billed: Rs.1700.00 | Payer: SelfPay    | Covered: Rs.0.00     | PatientDue: Rs.1700.00 
+[B101] OutPatient     | Patient: Ravi       | Billed: Rs.1700.00 | Payer: Insurance  | Covered: Rs.1530.00  | PatientDue: Rs.170.00  
+[B101] OutPatient     | Patient: Ravi       | Billed: Rs.1700.00 | Payer: GovtScheme | Covered: Rs.1700.00  | PatientDue: Rs.0.00    
+----------------------------------------------------------------------------------------------------
+[B102] InPatient      | Patient: Meena      | Billed: Rs.47500.00 | Payer: SelfPay    | Covered: Rs.0.00     | PatientDue: Rs.47500.00
+[B102] InPatient      | Patient: Meena      | Billed: Rs.47500.00 | Payer: Insurance  | Covered: Rs.30000.00 | PatientDue: Rs.17500.00
+[B102] InPatient      | Patient: Meena      | Billed: Rs.47500.00 | Payer: GovtScheme | Covered: Rs.20000.00 | PatientDue: Rs.27500.00
+----------------------------------------------------------------------------------------------------
+[B103] DayCareSurgery | Patient: Arjun      | Billed: Rs.22000.00 | Payer: SelfPay    | Covered: Rs.0.00     | PatientDue: Rs.22000.00
+[B103] DayCareSurgery | Patient: Arjun      | Billed: Rs.22000.00 | Payer: Insurance  | Covered: Rs.19800.00 | PatientDue: Rs.2200.00 
+[B103] DayCareSurgery | Patient: Arjun      | Billed: Rs.22000.00 | Payer: GovtScheme | Covered: Rs.20000.00 | PatientDue: Rs.2000.00 
+----------------------------------------------------------------------------------------------------
+[B104] Emergency      | Patient: Priya      | Billed: Rs.9000.00 | Payer: SelfPay    | Covered: Rs.0.00     | PatientDue: Rs.9000.00 
+[B104] Emergency      | Patient: Priya      | Billed: Rs.9000.00 | Payer: Insurance  | Covered: Rs.8100.00  | PatientDue: Rs.900.00  
+[B104] Emergency      | Patient: Priya      | Billed: Rs.9000.00 | Payer: GovtScheme | Covered: Rs.9000.00  | PatientDue: Rs.0.00    
+----------------------------------------------------------------------------------------------------
+Daily Gross Billed Total (4 Bills): Rs.80200.00
