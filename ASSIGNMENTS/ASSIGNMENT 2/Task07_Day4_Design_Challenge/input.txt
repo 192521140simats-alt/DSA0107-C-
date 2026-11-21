@@ -1,0 +1,1 @@
+Account #2001, initial balance 10000.0, 500,000 deposits of +10.0, statement capacity=50
