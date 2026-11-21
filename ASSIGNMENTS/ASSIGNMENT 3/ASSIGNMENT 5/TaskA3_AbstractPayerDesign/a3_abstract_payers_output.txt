@@ -1,0 +1,7 @@
+=== TASK A3: ABSTRACT PAYER HIERARCHY & EXTENSIBILITY ===
+Evaluating Bill [B301] (InPatient) = Rs.47500.00
+--------------------------------------------------------------------------
+Payer: SelfPay                  | Covered: Rs.0.00      | Patient Balance: Rs.47500.00
+Payer: Insurance                | Covered: Rs.30000.00  | Patient Balance: Rs.17500.00
+Payer: GovernmentScheme         | Covered: Rs.20000.00  | Patient Balance: Rs.27500.00
+Payer: CorporateTieUp(TechCorp) | Covered: Rs.40375.00  | Patient Balance: Rs.7125.00

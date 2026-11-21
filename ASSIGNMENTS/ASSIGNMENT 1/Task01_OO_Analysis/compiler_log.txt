@@ -1,0 +1,3 @@
+=== g++ -std=c++17 -Wall -Wextra t1_oo_fare_model.cpp ===
+exit=0
+(no warnings/errors)

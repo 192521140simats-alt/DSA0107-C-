@@ -1,0 +1,3 @@
+--- t2_tokens_and_constants ---
+Middle peak fare (constexpr): 2400 paise
+Macro surcharge value: 20% | const max zones: 3

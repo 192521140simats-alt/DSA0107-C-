@@ -1,0 +1,11 @@
+=== g++ -std=c++17 -Wall -Wextra t4_explicit_braced.cpp ===
+exit=0
+(no warnings/errors)
+
+=== g++ -std=c++17 -Wall -Wextra t4_predict_conversions.cpp ===
+exit=0
+t4_predict_conversions.cpp: In function ‘int main()’:
+t4_predict_conversions.cpp:18:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+   18 |     std::cout << (s < u ? "s < u" : "s >= u") << '\n';
+      |                   ~~^~~
+

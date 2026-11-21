@@ -1,0 +1,8 @@
+--- t3_types_and_precision ---
+sizeof(bool)=1, sizeof(char)=1, sizeof(int)=4, sizeof(long long)=8, sizeof(unsigned)=4, sizeof(float)=4, sizeof(double)=8
+INT_MAX=2147483647, LLONG_MAX=9223372036854775807
+3,000,000 journeys * 3600 paise (long long): 10800000000
+Truncated into 32-bit int (overflow!)     : -2084901888
+Sum of 3,000,000 * 10.33 (double): 30989999.997651
+Sum of 3,000,000 * 1033p / 100   : 30990000.000000
+Absolute rounding drift (double - exact): -0.002349 Rs

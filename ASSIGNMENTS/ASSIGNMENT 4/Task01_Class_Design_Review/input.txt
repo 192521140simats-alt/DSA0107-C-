@@ -1,0 +1,1 @@
+Staff records: Professor(101, 80000, 15000), LabAssistant(202, 35000), GuestFaculty(303, 40h @ 1200), VisitingResearcher(404, 60000, 10000)

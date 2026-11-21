@@ -1,0 +1,3 @@
+=== g++ -std=c++17 -Wall -Wextra t3_types_and_precision.cpp ===
+exit=0
+(no warnings/errors)

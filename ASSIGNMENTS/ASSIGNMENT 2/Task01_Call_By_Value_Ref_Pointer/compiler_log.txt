@@ -1,0 +1,23 @@
+=== g++ -std=c++17 -Wall -Wextra q1_hostel_fee_concession.cpp ===
+exit=1
+cc1plus: fatal error: dsa0107_pkg/Task01_Call_By_Value_Ref_Pointer/q1_hostel_fee_concession.cpp: No such file or directory
+compilation terminated.
+
+
+=== g++ -std=c++17 -Wall -Wextra q1_predict_output.cpp ===
+exit=1
+cc1plus: fatal error: dsa0107_pkg/Task01_Call_By_Value_Ref_Pointer/q1_predict_output.cpp: No such file or directory
+compilation terminated.
+
+
+=== g++ -std=c++17 -Wall -Wextra q1_complete_code.cpp ===
+exit=1
+cc1plus: fatal error: dsa0107_pkg/Task01_Call_By_Value_Ref_Pointer/q1_complete_code.cpp: No such file or directory
+compilation terminated.
+
+
+=== g++ -std=c++17 -Wall -Wextra q1_alt_complexity.cpp ===
+exit=1
+cc1plus: fatal error: dsa0107_pkg/Task01_Call_By_Value_Ref_Pointer/q1_alt_complexity.cpp: No such file or directory
+compilation terminated.
+
