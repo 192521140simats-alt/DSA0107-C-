@@ -1,1 +1,0 @@
-Sample daily hospital bills: B101 OutPatient (1700), B102 InPatient (47500), B103 DayCareSurgery (22000), B104 Emergency (9000).

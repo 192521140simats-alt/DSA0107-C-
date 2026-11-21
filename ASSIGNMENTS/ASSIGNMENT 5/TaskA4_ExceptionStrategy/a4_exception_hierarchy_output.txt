@@ -1,8 +1,0 @@
-=== TASK A4: EXCEPTION HIERARCHY & NOEXCEPT SPECIFICATIONS ===
-noexcept(BillRecord::getAmount()): true
-noexcept(~BillRecord())          : true
-
-[Caught 1] PatientRecordMissingError: Patient ID cannot be empty
-[Caught 2] NegativeChargeError: Charge amount cannot be negative (-500.000000)
-[Caught 3] UnknownPackageError: Unknown package code 'PKG-INVALID'
-[Caught 4] ClaimError: Bill Rs.45000.000000 exceeds policy cover Rs.30000.000000

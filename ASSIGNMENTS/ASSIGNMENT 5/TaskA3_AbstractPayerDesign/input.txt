@@ -1,1 +1,0 @@
-Sample InPatientBill B301 (Rs. 47,500) evaluated across SelfPay, Insurance, GovernmentScheme, and CorporateTieUpPayer.
