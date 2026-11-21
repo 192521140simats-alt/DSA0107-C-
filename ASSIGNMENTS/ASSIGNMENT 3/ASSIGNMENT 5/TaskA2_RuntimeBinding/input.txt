@@ -1,1 +1,0 @@
-No interactive input required (deterministic execution).

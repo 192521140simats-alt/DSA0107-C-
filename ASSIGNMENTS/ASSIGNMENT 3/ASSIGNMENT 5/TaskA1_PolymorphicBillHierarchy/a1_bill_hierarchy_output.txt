@@ -1,7 +1,0 @@
-=== TASK A1: POLYMORPHIC BILL HIERARCHY & DAILY TOTAL ===
-[B101] OutPatient      | Patient: Ravi       | Total: Rs.1700.00
-[B102] InPatient       | Patient: Meena      | Total: Rs.47500.00
-[B103] DayCareSurgery  | Patient: Arjun      | Total: Rs.22000.00
-[B104] Emergency       | Patient: Priya      | Total: Rs.9000.00
---------------------------------------------------------------------
-Grand Daily Total across 4 bills: Rs.80200.00
