@@ -1,0 +1,1 @@
+Fleet: Bicycle(CYC-01), TwoWheeler(TN09-TW-1122), Car(TN09-CR-4455), ElectricCar(TN09-EV-7788), ElectricBus(TN09-EB-9900); 3 rental days + late days

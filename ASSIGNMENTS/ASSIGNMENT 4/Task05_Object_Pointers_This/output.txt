@@ -1,0 +1,8 @@
+--- t5_complete_code ---
+324.00
+
+--- t5_four_ways_and_search ---
+(a/b) Asha total: 237.50
+(c)   Bala total: 720.00
+(d)   Chitra total: 1190.00
+Highest active cart: Chitra -> Rs. 1190.00

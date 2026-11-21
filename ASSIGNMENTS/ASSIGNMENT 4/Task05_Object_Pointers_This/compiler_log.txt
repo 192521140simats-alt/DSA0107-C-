@@ -1,0 +1,7 @@
+=== g++ -std=c++17 -Wall -Wextra t5_complete_code.cpp ===
+exit=0
+(no warnings/errors)
+
+=== g++ -std=c++17 -Wall -Wextra t5_four_ways_and_search.cpp ===
+exit=0
+(no warnings/errors)

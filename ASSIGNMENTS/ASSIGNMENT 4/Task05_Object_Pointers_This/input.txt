@@ -1,0 +1,1 @@
+Cart c: Rice(60), Dal(120), discount 10%, Oil(180); Active carts: Asha, Bala, Chitra

@@ -1,0 +1,20 @@
+=== Initial Fleet ===
+[Bicycle] Reg: CYC-01 | Rate/day: Rs. 200.00 | Status: AVAILABLE | Gear: Yes
+[TwoWheeler] Reg: TN09-TW-1122 | Rate/day: Rs. 600.00 | Status: AVAILABLE | Level: 85.00% | NextService: 15/1/2027
+[Car] Reg: TN09-CR-4455 | Rate/day: Rs. 2200.00 | Status: AVAILABLE | Level: 90.00% | NextService: 10/2/2027 | Seats: 5
+[ElectricCar] Reg: TN09-EV-7788 | Rate/day: Rs. 2800.00 | Status: AVAILABLE | Level: 95.00% | NextService: 20/3/2027 | Seats: 5 | Battery: 60.00 kWh
+[ElectricBus] Reg: TN09-EB-9900 | Rate/day: Rs. 8500.00 | Status: AVAILABLE | Level: 92.00% | NextService: 5/4/2027 | PaxCap: 42 | Battery: 240.00 kWh
+
+=== Renting All Vehicles ===
+Rent CYC-01: OK
+Rent TN09-TW-1122: OK
+Rent TN09-CR-4455: OK
+Rent TN09-EV-7788: OK
+Rent TN09-EB-9900: OK
+
+=== Returning Vehicles (with late fees & usage) ===
+CYC-01 (Bicycle) -> 3 days + 1 late day(s) -> Bill: Rs. 900.00
+TN09-TW-1122 (TwoWheeler) -> 3 days + 0 late day(s) -> Bill: Rs. 2259.00
+TN09-CR-4455 (Car) -> 3 days + 1 late day(s) -> Bill: Rs. 9236.00
+TN09-EV-7788 (ElectricCar) -> 3 days + 2 late day(s) -> Bill: Rs. 10830.00
+TN09-EB-9900 (ElectricBus) -> 3 days + 1 late day(s) -> Bill: Rs. 30240.00

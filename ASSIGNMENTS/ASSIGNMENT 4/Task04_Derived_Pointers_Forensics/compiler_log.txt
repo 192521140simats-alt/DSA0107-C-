@@ -1,0 +1,11 @@
+=== g++ -std=c++17 -g -fsanitize=address -Wall -Wextra t4_buggy_leak.cpp ===
+exit=0
+(no compiler warnings/errors)
+
+=== g++ -std=c++17 -g -fsanitize=address -Wall -Wextra t4_repaired_virtual.cpp ===
+exit=0
+(no warnings/errors)
+
+=== g++ -std=c++17 -Wall -Wextra t4_predict_output.cpp ===
+exit=0
+(no warnings/errors)

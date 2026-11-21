@@ -1,0 +1,12 @@
+--- t2_predict_virtual ---
+Person Student Staff TA 
+
+--- t2_predict_novirtual ---
+Person Student Person Staff TA 
+Disambiguated: Tharika / Tharika
+
+--- t2_university_hierarchy ---
+TA: Tharika S (ID: 192521140, Phone: 9876543210) | Prog: B.Tech CSE (CGPA: 9.42) | Dept: CSE, Stipend: 18000, Course: DSA01
+Scholar: Divya M (ID: 192521999) | Prog: Ph.D. AI | Fellowship: DST-INSPIRE (Rs. 37000)
+sizeof(TeachingAssistant) [virtual base]: 208 bytes
+sizeof(ComposedTA) [two Person subobjects]: 256 bytes

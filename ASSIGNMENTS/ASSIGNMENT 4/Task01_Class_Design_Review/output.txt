@@ -1,0 +1,9 @@
+--- t1_payroll_hierarchy ---
+[101] Dr. Meenakshi (Professor) -> Pay: Rs. 128600.00
+[202] Suresh K (LabAssistant) -> Pay: Rs. 49700.00
+[303] Ananya R (GuestFaculty) -> Pay: Rs. 48000.00
+[404] Dr. Karthik (VisitingResearcher) -> Pay: Rs. 95200.00
+Total Monthly Payroll: Rs. 321500.00
+
+--- t1_alt_monolithic ---
+sizeof(MonolithicStaff) = 88 bytes | pay = 48000

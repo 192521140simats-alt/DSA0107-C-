@@ -1,0 +1,25 @@
+=== g++ -std=c++17 -Wall -Wextra t3_predict_car.cpp ===
+exit=0
+(no warnings/errors)
+
+=== g++ -std=c++17 -Wall -Wextra t3_complete_code.cpp ===
+exit=0
+(no warnings/errors)
+
+=== g++ -std=c++17 -Wall -Wextra t3_swapped_init_warning.cpp ===
+exit=0
+t3_swapped_init_warning.cpp: In constructor ‘StudentSwapped::StudentSwapped(const std::string&, int, long long int, const std::string&, int)’:
+t3_swapped_init_warning.cpp:22:13: warning: ‘StudentSwapped::home’ will be initialized after [-Wreorder]
+   22 |     Address home;
+      |             ^~~~
+t3_swapped_init_warning.cpp:21:15: warning:   ‘long long int StudentSwapped::regNo’ [-Wreorder]
+   21 |     long long regNo;
+      |               ^~~~~
+t3_swapped_init_warning.cpp:25:5: warning:   when initialized here [-Wreorder]
+   25 |     StudentSwapped(const std::string& n, int a, long long r, const std::string& c, int p)
+      |     ^~~~~~~~~~~~~~
+
+
+=== g++ -std=c++17 -Wall -Wextra t3_trace_lifecycle.cpp ===
+exit=0
+(no warnings/errors)
