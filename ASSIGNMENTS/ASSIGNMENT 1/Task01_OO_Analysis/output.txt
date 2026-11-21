@@ -1,3 +1,0 @@
---- t1_oo_fare_model ---
-Journey 1 (Outer, 09:00 Peak): Allowed | Fare: Rs.36.00 | Balance: Rs.84.00
-Journey 2 (Outer, 18:00 Peak): Denied | Attempted Fare: Rs.36.00 | Balance: Rs.84.00

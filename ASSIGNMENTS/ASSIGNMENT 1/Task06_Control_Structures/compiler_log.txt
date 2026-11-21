@@ -1,7 +1,0 @@
-=== g++ -std=c++17 -Wall -Wextra t6_control_todo.cpp ===
-exit=0
-t6_control_todo.cpp: In function ‘int main()’:
-t6_control_todo.cpp:41:15: warning: unused variable ‘balance’ [-Wunused-variable]
-   41 |     long long balance = 10000;                       // Rs 100.00 in paise
-      |               ^~~~~~~
-
