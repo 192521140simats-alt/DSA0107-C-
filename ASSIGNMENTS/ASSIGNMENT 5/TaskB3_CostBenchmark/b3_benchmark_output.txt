@@ -1,0 +1,16 @@
+=== B3.1 CORRECTNESS CHECK (10 BILLS) ===
+Virtual Hierarchy Total : 211135.00
+Struct + Switch Total   : 211135.00
+std::variant Total      : 211135.00
+Match Status            : EXACT MATCH
+
+=== B3.2 DISPATCH SCALING BENCHMARK ===
+Object Sizes -> sizeof(VIP)=32B (+8B ptr), sizeof(SBill)=40B, sizeof(VarBill)=32B
+N =     1000 | Virtual:   0.004 ms | Switch:   0.002 ms | Variant:   0.002 ms
+N =  1000000 | Virtual:   8.935 ms | Switch:   6.580 ms | Variant:   5.694 ms
+N = 10000000 | Virtual:  81.336 ms | Switch:  64.981 ms | Variant:  55.233 ms
+
+=== B3.3 EXCEPTION vs RETURN CODE COST (N = 1,000,000) ===
+Invalid Rate =  0% | Errors =      0 | ReturnCode:   0.742 ms | Exception:    1.663 ms | Ratio (EX/RC): 2.2x
+Invalid Rate =  1% | Errors =  10000 | ReturnCode:   1.015 ms | Exception:   20.135 ms | Ratio (EX/RC): 19.8x
+Invalid Rate = 50% | Errors = 500000 | ReturnCode:   1.799 ms | Exception:  859.440 ms | Ratio (EX/RC): 477.7x
